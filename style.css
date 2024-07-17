@@ -19,6 +19,9 @@ body {
     width: 300px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card:hover {
@@ -36,18 +39,16 @@ body {
 
 /* Горизонтальные карточки */
 .card-horizontal-left, .card-horizontal-right {
-    display: flex;
+    flex-direction: row;
     align-items: center;
     text-align: left;
-    padding: 20px;
 }
 
 .card-horizontal-left img {
     margin-right: 20px;
 }
 
-.card-horizontal-right img
-{
+.card-horizontal-right img {
     margin-left: 20px;
 }
 
