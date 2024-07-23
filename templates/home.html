@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Рецепты
+{% endblock %}
+
+
+{% block content %}
+    <div class="header-background"> <!-- Добавлен цветной фон -->
+        <div class="card">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+                <h1 class="card-title">Вкусные идеи для любого повода</h1>
+                <h4 class="card-text">Нужен рецепт для семейного ужина или праздничного стола? У нас вы найдете блюда на любой вкус и случай. Пусть каждый прием пищи станет настоящим праздником!</h4>
+                <a href="#" class="btn btn-primary">подробнее</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../static/image/sup-s-kurinymi-frikadelkami-i-plavlennym-syrom-pp_1720930027_16_6iqaf4h_max.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Первые блюда на любой вкус</h2>
+            <p>Приготовление первых блюд не займет у опытной хозяйки много времени. Разнообразие рецептов позволяет ежедневно удивлять родных новыми супами с самыми неожиданными ингредиентами.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../static/image/pomidory-s-syrom-i-lukom-i-yaicom_1679139267_12_max.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Быстрые решения для вкусного завтрака</h2>
+            <p>Идеальные рецепты омлетов для тех, кто ценит свое время. Вкусные, питательные и быстрые в приготовлении – начните утро с удовольствия!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../static/image/tvorojnaya-zapekanka-pp-v-duxovke-bez-muki_1602407336_15_max.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Вкусные воздушные запеканки</h2>
+            <p>Запеканка в духовке – популярное во всем мире блюдо в качестве десерта, а также украшения на праздничном столе</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
+    </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                          <img src="../static/image/sup-xarcho-s-risom_1506002531_11_max.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title">Суп харчо классический с рисом</h4>
+                            <p class="card-text">Готовь знаменитое первое блюдо легко и просто! По этому рецепту получается классический суп харчо с говядиной и рисом - вкусный, наваристый, сытный суп по-грузински. </p>
+                            <a href="https://1000.menu/cooking/22521-sup-xarcho-klassicheskii-s-risom" class="btn btn-primary">Рецепт</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="../static/image/lavash-s-farshem-i-syrom-v-duxovke_1642843704_19_max.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Лаваш с фаршем и сыром в духовке</h4>
+                        <p class="card-text">Просто, сытно, на ужин, перекус на работу или детям в школу! Лаваш с фаршем и сыром в духовке - несложное и очень аппетитное блюдо на скорую руку.</p>
+                        <a href="https://1000.menu/cooking/62092-lavash-s-farshem-i-syrom-v-duxovke" class="btn btn-primary">Рецепт</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="../static/image/sharlotka-na-yaicax-s-yablokami_1656183136_11_max.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Шарлотка на яйцах с яблоками</h4>
+                            <p class="card-text">Самая любимая, пышная, мягкая, для всей семьи! Шарлотка на яйцах с яблоками печется без добавления разрыхлителя или соды, бисквит поднимается за счет хорошо взбитых яиц.</p>
+                            <a href="https://1000.menu/cooking/65880-sharlotka-na-yaicax-s-yablokami" class="btn btn-primary">Рецепт</a>
+                        </div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+{% endblock %}
+
