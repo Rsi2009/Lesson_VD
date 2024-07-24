@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Простой блог</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+        .post {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .post h4 {
+            margin-bottom: 10px;
+        }
+        .post p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center mb-4">Простой блог</h1>
+    <form method="POST" action="/">
+       <div class="form-group">
+           <label for="title">Заголовок:</label>
+           <input type="text" class="form-control" id="title" name="title" required>
+       </div>
+        <div class="form-group">
+           <label for="content">Текст поста:</label>
+           <textarea class="form-control" id="content" name="content" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить пост</button>
+    </form>
+    <hr>
+    <h2 class="mt-4">Посты</h2>
+
+    {% for post in posts %}
+        <div class="post">
+            <h4>{{ post.title }}</h4>
+            <p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
+
+</div>
+
+<!-- Подключение Bootstrap JS и зависимостей -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

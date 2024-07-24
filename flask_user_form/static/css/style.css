@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f0f0, #d3d3d3); /* Градиентный фон */
+    min-height: 100vh; /* Минимальная высота экрана */
+    margin: 0; /* Убираем отступы */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Горизонтальные карточки */
+.card-horizontal-left, .card-horizontal-right {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.card-horizontal-left img {
+    margin-right: 20px;
+}
+
+.card-horizontal-right img {
+    margin-left: 20px;
+}
+
+.card-horizontal-left .card-content, .card-horizontal-right .card-content {
+    text-align: left;
+}
+
+/* Вертикальная карточка */
+.card-vertical {
+    text-align: center;
+}
+
+.card-vertical img {
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Цвета заднего фона */
+.card-horizontal-left {
+    background-color: #e0f7fa;
+}
+
+.card-vertical {
+    background-color: #fce4ec;
+}
+
+.card-horizontal-right {
+    background-color: #e8f5e9;
+}
